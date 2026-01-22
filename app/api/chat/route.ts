@@ -72,8 +72,6 @@ export async function POST(req: Request) {
     const messagesError = validateMessages(body.messages)
     if (messagesError) return messagesError
 
-    console.log('Selected model:', selectedModel)
-
     // Convert messages to UI format
     const uiMessages: UIMessage[] = body.messages.map((msg: any) => ({
       id: msg.id || Math.random().toString(36).substr(2, 9),
@@ -83,7 +81,6 @@ export async function POST(req: Request) {
 
     // Find provider
     const providerConfig = findProvider(selectedModel);
-    console.log('Provider config:', providerConfig);
     if (!providerConfig) {
       return createErrorResponse(
         'UNSUPPORTED_MODEL',
@@ -108,8 +105,6 @@ export async function POST(req: Request) {
       )
     }
 
-    console.log('Using provider:', providerConfig.name, 'Model:', selectedModel)
-
     // Stream response
     const result = streamText({
       model: providerConfig.provider(selectedModel),
@@ -117,12 +112,9 @@ export async function POST(req: Request) {
       messages: convertToModelMessages(uiMessages),
       maxOutputTokens: 1000,
       temperature: 0.7,
-      onError: (error) => console.error('AI API Error:', error),
-      onFinish: (result) => console.log('AI Response finished:', { provider: providerConfig.name, model: selectedModel, usage: result.usage, finishReason: result.finishReason })
     });
     return result.toUIMessageStreamResponse();
   } catch (error: any) {
-    console.error('API Error:', error)
     
     // Handle API key errors
     if (error?.error?.error?.code === 'invalid_api_key' || 

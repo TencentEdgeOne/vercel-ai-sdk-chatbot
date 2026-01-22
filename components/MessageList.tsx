@@ -25,7 +25,7 @@ export default function MessageList({ messages, status, onRegenerate }: MessageL
         setCopiedMessageId(null)
       }, 2000)
     } catch (err) {
-      console.error('Failed to copy text: ', err)
+      // Failed to copy text
     }
   }
 
@@ -38,11 +38,10 @@ export default function MessageList({ messages, status, onRegenerate }: MessageL
             style={{ maxWidth: '720px' }}
           >
             <div
-              className={`flex items-center justify-center w-6 h-6 rounded-lg bg-gray-800 border border-gray-700 flex-shrink-0 ${
-                message.role === 'user'
-                  ? 'text-white'
-                  : 'text-white'
-              }`}
+              className={`flex items-center justify-center w-6 h-6 rounded-lg bg-gray-800 border border-gray-700 flex-shrink-0 ${message.role === 'user'
+                ? 'text-white'
+                : 'text-white'
+                }`}
             >
               {message.role === 'user' ? <User size={12} /> : <Bot size={12} />}
             </div>
@@ -89,7 +88,7 @@ export default function MessageList({ messages, status, onRegenerate }: MessageL
                     ?.join('') || ''}
                 </p>
               )}
-              
+
               {/* AI message action buttons */}
               {message.role === 'assistant' && (
                 <div className="flex justify-end space-x-2 mt-2">
@@ -101,20 +100,18 @@ export default function MessageList({ messages, status, onRegenerate }: MessageL
                         ?.join('') || '',
                       message.id
                     )}
-                    className={`p-1.5 rounded-lg border transition-all duration-200 ${
-                      copiedMessageId === message.id
-                        ? 'bg-green-800 border-green-600'
-                        : 'bg-gray-800 hover:bg-gray-700 border-gray-600 hover:border-gray-500'
-                    }`}
+                    className={`p-1.5 rounded-lg border transition-all duration-200 ${copiedMessageId === message.id
+                      ? 'bg-green-800 border-green-600'
+                      : 'bg-gray-800 hover:bg-gray-700 border-gray-600 hover:border-gray-500'
+                      }`}
                     title={copiedMessageId === message.id ? "Copied!" : "Copy message"}
                   >
-                    <Copy 
-                      size={10} 
-                      className={`transition-colors duration-200 ${
-                        copiedMessageId === message.id
-                          ? 'text-green-400'
-                          : 'text-gray-400 hover:text-white'
-                      }`} 
+                    <Copy
+                      size={10}
+                      className={`transition-colors duration-200 ${copiedMessageId === message.id
+                        ? 'text-green-400'
+                        : 'text-gray-400 hover:text-white'
+                        }`}
                     />
                   </button>
                   <button
@@ -129,25 +126,25 @@ export default function MessageList({ messages, status, onRegenerate }: MessageL
               )}
             </div>
           </div>
-          
+
           {/* AI loading state - below last user message */}
-          {message.role === 'user' && 
-           index === messages.length - 1 && 
-           status !== 'ready' && (
-            <div className="flex items-center space-x-3 mx-auto mt-2" style={{ maxWidth: '720px' }}>
-              <div className="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-800 border border-gray-700 flex-shrink-0">
-                <Bot size={12} className="text-white" />
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center space-x-1">
-                  <span className="text-gray-400 text-sm">AI is thinking</span>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse"></div>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+          {message.role === 'user' &&
+            index === messages.length - 1 &&
+            status !== 'ready' && (
+              <div className="flex items-center space-x-3 mx-auto mt-2" style={{ maxWidth: '720px' }}>
+                <div className="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-800 border border-gray-700 flex-shrink-0">
+                  <Bot size={12} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center space-x-1">
+                    <span className="text-gray-400 text-sm">AI is thinking</span>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse"></div>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
         </div>
       ))}
     </div>

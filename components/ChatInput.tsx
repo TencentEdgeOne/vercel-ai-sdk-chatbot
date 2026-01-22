@@ -30,9 +30,7 @@ export default function ChatInput({
 
   // Listen to initialValue changes, update input content
   useEffect(() => {
-    console.log('ChatInput: initialValue changed to:', initialValue)
     setInput(initialValue)
-    console.log('ChatInput: set input to:', initialValue)
   }, [initialValue])
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -71,7 +69,7 @@ export default function ChatInput({
       />
       <button
         type="submit"
-        disabled={status !== 'ready' || !input.trim()}
+        disabled={status !== 'ready' || !input.trim() || !selectedModel}
         className="absolute bottom-4 right-4 w-10 h-10 bg-transparent hover:bg-white hover:bg-opacity-20 rounded-full flex items-center justify-center text-white focus:outline-none focus:ring-2 focus:ring-gray-500 disabled:opacity-50 disabled:cursor-not-allowed text-sm transition-all duration-200"
       >
         {status !== 'ready' ? '...' : '↑'}

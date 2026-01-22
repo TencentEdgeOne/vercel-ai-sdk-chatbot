@@ -32,11 +32,6 @@ export default function Chat() {
 
   const { showScrollToBottom, scrollToBottom, messagesEndRef } = useScrollLogic(messages.length, status)
 
-  // Debug: Listen to lastUserMessage changes
-  useEffect(() => {
-    console.log('page.tsx: lastUserMessage changed to:', lastUserMessage)
-  }, [lastUserMessage])
-
   // Handle message sending
   const handleMessageSubmit = (text: string) => {
     handleSendMessage(text)
@@ -55,10 +50,8 @@ export default function Chat() {
 
   // Handle retry
   const handleRetry = () => {
-    console.log('handleRetry called, lastUserMessage before:', lastUserMessage)
     clearError()
     const shouldGoToHome = clearLastUserMessage()
-    console.log('handleRetry: lastUserMessage after:', lastUserMessage)
     
     // Only return to initial screen if no messages left after deletion
     if (shouldGoToHome) {
