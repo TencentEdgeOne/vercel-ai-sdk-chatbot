@@ -1079,7 +1079,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* 确保输入框文本可见 */
+/* Ensure input text visibility */
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
   color: #111827 !important;

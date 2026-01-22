@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 纯黑色主题 */
+/* Pure black theme */
 html, body {
-  background-color: #000000; /* 纯黑色 */
-  color: #ffffff; /* 纯白色 */
+  background-color: #000000; /* Pure black */
+  color: #ffffff; /* Pure white */
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* 自定义滚动条样式 */
+/* Custom scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -29,18 +29,18 @@ html, body {
   background: #666666;
 }
 
-/* 确保输入框在黑色主题下可见 */
+/* Ensure input visibility in dark theme */
 input[type="text"], input[type="email"], input[type="password"], textarea {
   color: #ffffff !important;
-  background-color: #111111 !important; /* 深灰色 */
-  border-color: #333333 !important; /* 中灰色 */
+  background-color: #111111 !important; /* Dark gray */
+  border-color: #333333 !important; /* Medium gray */
 }
 
 input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, textarea::placeholder {
-  color: #666666 !important; /* 浅灰色 */
+  color: #666666 !important; /* Light gray */
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
   border-color: #6b7280 !important; /* gray-500 */
-  /* 移除默认的box-shadow，让组件自己控制光晕效果 */
+  /* Remove default box-shadow, let components control glow effects */
 }
