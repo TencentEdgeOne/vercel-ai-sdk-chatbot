@@ -5,8 +5,6 @@ import { openai } from '@ai-sdk/openai'
 import { xai } from '@ai-sdk/xai'
 import { streamText, convertToModelMessages, UIMessage } from 'ai'
 
-export const maxDuration = 30
-
 // Provider configuration
 const PROVIDERS = {
   anthropic: { provider: anthropic, envKey: 'ANTHROPIC_API_KEY', prefixes: ['claude-'] },
