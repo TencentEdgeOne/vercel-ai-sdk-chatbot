@@ -22,49 +22,49 @@ type ModelDefinition = {
 const MODEL_DEFINITIONS: ModelDefinition[] = [
   // DeepSeek Models
   {
-    id: 'deepseek-chat',
-    name: 'DeepSeek Chat',
+    id: 'deepseek-v4-flash',
+    name: 'DeepSeek V4 Flash',
     provider: 'DeepSeek',
-    description: 'Strong reasoning and coding abilities',
+    description: 'Fast, lightweight, low-latency',
     envKey: 'DEEPSEEK_API_KEY'
   },
   {
-    id: 'deepseek-reasoner',
-    name: 'DeepSeek Reasoner',
+    id: 'deepseek-v4-pro',
+    name: 'DeepSeek V4 Pro',
     provider: 'DeepSeek',
-    description: 'Enhanced reasoning capabilities',
+    description: 'Stronger reasoning, higher-quality output',
     envKey: 'DEEPSEEK_API_KEY'
   },
   // Anthropic Models
   {
-    id: 'claude-3-5-sonnet-latest',
-    name: 'Claude 3.5 Sonnet',
+    id: 'claude-opus-4-8',
+    name: 'Claude Opus 4.8',
     provider: 'Anthropic',
-    description: 'Most capable model for complex tasks',
+    description: 'Ideal for complex agentic coding and enterprise work',
     envKey: 'ANTHROPIC_API_KEY'
   },
   // Google Models
   {
-    id: 'gemini-2.0-flash',
-    name: 'Gemini 2.0 Flash',
+    id: 'gemini-3.5-flash',
+    name: 'Gemini 3.5 Flash',
     provider: 'Google',
-    description: 'Latest generation with enhanced capabilities',
+    description: 'Higher speed and lower cost',
     envKey: 'GOOGLE_GENERATIVE_AI_API_KEY'
   },
   // OpenAI Models
   {
-    id: 'gpt-4o-mini',
-    name: 'GPT-4o Mini',
+    id: 'gpt-5.5',
+    name: 'GPT 5.5',
     provider: 'OpenAI',
-    description: 'Fast and cost-effective',
+    description: 'A new class of intelligence for coding and professional work.',
     envKey: 'OPENAI_API_KEY'
   },
   // xAI Models
   {
-    id: 'grok-3',
-    name: 'Grok-3',
+    id: 'grok-4.5',
+    name: 'Grok 4.5',
     provider: 'xAI',
-    description: 'Advanced reasoning and real-time knowledge',
+    description: 'Agentic tool calling, minimal hallucinations, configurable reasoning.',
     envKey: 'XAI_API_KEY'
   }
 ]

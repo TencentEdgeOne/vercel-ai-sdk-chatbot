@@ -14,53 +14,53 @@ export interface ModelOption {
 const fallbackModelOptions: ModelOption[] = [
   // DeepSeek Models (Priority display)
   {
-    id: 'deepseek-chat',
-    name: 'DeepSeek Chat',
+    id: 'deepseek-v4-flash',
+    name: 'DeepSeek V4 Flash',
     provider: 'DeepSeek',
-    description: 'Strong reasoning and coding abilities',
+    description: 'Fast, lightweight, low-latency',
     disabled: false
   },
   {
-    id: 'deepseek-reasoner',
-    name: 'DeepSeek Reasoner',
+    id: 'deepseek-v4-pro',
+    name: 'DeepSeek V4 Pro',
     provider: 'DeepSeek',
-    description: 'Enhanced reasoning capabilities',
+    description: 'Stronger reasoning, higher-quality output',
     disabled: false
   },
 
   // Anthropic Models
   {
-    id: 'claude-3-5-sonnet-latest',
-    name: 'Claude 3.5 Sonnet',
+    id: 'claude-opus-4-8',
+    name: 'Claude Opus 4.8',
     provider: 'Anthropic',
-    description: 'Most capable model for complex tasks',
+    description: 'Ideal for complex agentic coding and enterprise work',
     disabled: false
   },
 
   // Google Models
   {
-    id: 'gemini-2.0-flash',
-    name: 'Gemini 2.0 Flash',
+    id: 'gemini-3.5-flash',
+    name: 'Gemini 3.5 Flash',
     provider: 'Google',
-    description: 'Latest generation with enhanced capabilities',
+    description: 'Higher speed and lower cost',
     disabled: false
   },
 
   // OpenAI Models
   {
-    id: 'gpt-4o-mini',
-    name: 'GPT-4o Mini',
+    id: 'gpt-5.5',
+    name: 'GPT 5.5',
     provider: 'OpenAI',
-    description: 'Fast and cost-effective',
+    description: 'A new class of intelligence for coding and professional work.',
     disabled: false
   },
 
   // xAI Models
   {
-    id: 'grok-3',
-    name: 'Grok-3',
+    id: 'grok-4.5',
+    name: 'Grok 4.5',
     provider: 'xAI',
-    description: 'Advanced reasoning and real-time knowledge',
+    description: 'Agentic tool calling, minimal hallucinations, configurable reasoning.',
     disabled: false
   }
 ]

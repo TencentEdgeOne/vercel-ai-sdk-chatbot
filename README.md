@@ -1,22 +1,22 @@
 # VERCEL AI SDK Chatbot Template - EdgeOne Pages
 
-A modern AI chatbot template built with Next.js 14, Vercel AI SDK, and Tailwind CSS, specifically designed for deployment on EdgeOne Pages. This template provides a complete AI chat interface with support for multiple AI providers and models.
+A modern AI chatbot template built with Next.js 14, Vercel AI SDK, and Tailwind CSS, specifically designed for deployment on EdgeOne Makers. This template provides a complete AI chat interface with support for multiple AI providers and models.
 
 ## What is this template?
 
-This template is a production-ready AI chatbot application that you can deploy directly to EdgeOne Pages with one click. It features:
+This template is a production-ready AI chatbot application that you can deploy directly to EdgeOne Makers with one click. It features:
 
 - **Multi-Provider Support**: Works with DeepSeek, OpenAI, Anthropic, Google, and xAI models
 - **Modern UI**: Dark theme design with smooth animations and responsive layout
 - **Real-time Streaming**: Live AI responses with typing effects
 - **Error Handling**: Comprehensive error handling and retry mechanisms
-- **EdgeOne Optimized**: Specifically configured for EdgeOne Pages deployment
+- **EdgeOne Optimized**: Specifically configured for EdgeOne Makers deployment
 
 ## Deploy
 
 [![Deploy to EdgeOne](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Ftomcomtang%2Fvercel-ai-sdk-chatbot&output-directory=.next&build-command=npm+run+build&install-command=npm+install)
 
-Click the button above to deploy this template directly to EdgeOne Pages. The deployment will automatically configure the build settings and install dependencies.
+Click the button above to deploy this template directly to EdgeOne Makers. The deployment will automatically configure the build settings and install dependencies.
 
 ## ✨ Features
 
@@ -27,7 +27,7 @@ Click the button above to deploy this template directly to EdgeOne Pages. The de
 - 🎭 **Smooth Animations**: Page transitions, loading states, and interactive effects
 - 🔧 **Configurable**: Easy model switching and parameter adjustment
 - 🛡️ **Robust Error Handling**: Comprehensive error messages and retry functionality
-- 🌐 **EdgeOne Optimized**: Built specifically for EdgeOne Pages deployment
+- 🌐 **EdgeOne Optimized**: Built specifically for EdgeOne Makers deployment
 
 ## 🚀 Quick Start
 
@@ -89,7 +89,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Language**: TypeScript
-- **Deployment**: EdgeOne Pages
+- **Deployment**: EdgeOne Makers
 
 ## 📁 Project Structure
 
@@ -110,7 +110,7 @@ vercel-ai-sdk-chatbot/
 │   ├── useChatLogic.ts      # Chat logic hook
 │   └── useScrollLogic.ts    # Scroll logic hook
 ├── functions/
-│   └── api/chat/index.js    # EdgeOne Pages Action
+│   └── api/chat/index.js    # EdgeOne Makers Action
 ├── env.example              # Environment variables example
 ├── EDGEONE_SETUP.md         # EdgeOne deployment guide
 ├── package.json             # Project configuration
@@ -131,11 +131,11 @@ vercel-ai-sdk-chatbot/
 
 ### Supported Models
 
-- **DeepSeek**: `deepseek-chat`, `deepseek-reasoner`
-- **OpenAI**: `gpt-4o-mini`
-- **Anthropic**: `claude-3-5-sonnet-latest`
-- **Google**: `gemini-2.0-flash`
-- **xAI**: `grok-3`
+- **DeepSeek**: `deepseek-v4-flash`, `deepseek-v4-pro`
+- **OpenAI**: `gpt-5.5`
+- **Anthropic**: `claude-opus-4-8`
+- **Google**: `gemini-3.5-flash`
+- **xAI**: `grok-4.5`
 
 ## 🎨 Customization
 
@@ -174,7 +174,7 @@ The project uses Tailwind CSS, you can:
 
 ## 🚀 Deployment
 
-### EdgeOne Pages Deployment (Recommended)
+### EdgeOne Makers Deployment (Recommended)
 
 1. Click the "Deploy to EdgeOne" button above
 2. Configure environment variables in EdgeOne console
@@ -183,7 +183,7 @@ The project uses Tailwind CSS, you can:
 ### Manual Deployment
 
 1. Push code to GitHub
-2. Connect your GitHub repository to EdgeOne Pages
+2. Connect your GitHub repository to EdgeOne Makers
 3. Configure environment variables in EdgeOne dashboard
 4. Deploy automatically
 
@@ -218,7 +218,7 @@ If you encounter any issues or have questions, please:
 - [Vercel AI SDK](https://sdk.vercel.ai/) for providing excellent AI integration tools
 - [Next.js](https://nextjs.org/) for the powerful React framework
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [EdgeOne Pages](https://pages.edgeone.ai/) for cloud-edge integrated deployment platform
+- [EdgeOne Makers](https://pages.edgeone.ai/) for cloud-edge integrated deployment platform
 
 ---
 

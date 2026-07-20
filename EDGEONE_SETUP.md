@@ -32,24 +32,24 @@ Set the following environment variables in the EdgeOne Pages console:
 
 ### DeepSeek Models
 
-- `deepseek-chat` - Strong reasoning and coding abilities
-- `deepseek-reasoner` - Enhanced reasoning capabilities
+- `deepseek-v4-flash` - Better suited for scenarios that prioritize low latency, high concurrency, and cost efficiency
+- `deepseek-v4-pro` - Better suited for scenarios that prioritize reasoning capability, higher answer quality, and complex task performance
 
 ### Anthropic Models
 
-- `claude-3-5-sonnet-latest` - Most capable model for complex tasks
+- `claude-opus-4-8` -Ideal for complex agentic coding and enterprise work
 
 ### Google Models
 
-- `gemini-2.0-flash` - Latest generation with enhanced capabilities
+- `gemini-3.5-flash` - Higher speed and lower cost
 
 ### OpenAI Models
 
-- `gpt-4o-mini` - Fast and cost-effective
+- `gpt-5.5` - A new class of intelligence for coding and professional work.
 
 ### xAI Models
 
-- `grok-3` - Advanced reasoning and real-time knowledge
+- `grok-4.5` - Agentic tool calling, minimal hallucinations, configurable reasoning.
 
 ## API Endpoint
 
@@ -79,7 +79,7 @@ Set the following environment variables in the EdgeOne Pages console:
 
 ### Request Headers
 
-- `X-Model`: Specify the AI model to use (optional, defaults to `deepseek-chat`)
+- `X-Model`: Specify the AI model to use (optional, defaults to `deepseek-v4-flash`)
 
 ## AI SDK Integration
 

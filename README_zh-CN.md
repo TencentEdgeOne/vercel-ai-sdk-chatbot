@@ -1,22 +1,22 @@
-# VERCEL AI SDK 聊天机器人模板 - EdgeOne Pages
+# VERCEL AI SDK 聊天机器人模板 - EdgeOne Makers
 
-一个使用 Next.js 14、Vercel AI SDK 和 Tailwind CSS 构建的现代 AI 聊天机器人模板，专为在 EdgeOne Pages 上部署而设计。此模板提供了一个完整的 AI 聊天界面，支持多个 AI 提供商和模型。
+一个使用 Next.js 14、Vercel AI SDK 和 Tailwind CSS 构建的现代 AI 聊天机器人模板，专为在 EdgeOne Makers 上部署而设计。此模板提供了一个完整的 AI 聊天界面，支持多个 AI 提供商和模型。
 
 ## 这是什么模板？
 
-这个模板是一个生产就绪的 AI 聊天机器人应用，您可以一键直接部署到 EdgeOne Pages。它具有以下特点：
+这个模板是一个生产就绪的 AI 聊天机器人应用，您可以一键直接部署到 EdgeOne Makers。它具有以下特点：
 
 - **多提供商支持**：适用于 DeepSeek、OpenAI、Anthropic、Google 和 xAI 模型
 - **现代化 UI**：深色主题设计，具有流畅的动画和响应式布局
 - **实时流式**：带有打字效果的实时 AI 响应
 - **错误处理**：全面的错误处理和重试机制
-- **EdgeOne 优化**：专为 EdgeOne Pages 部署而配置
+- **EdgeOne 优化**：专为 EdgeOne Makers 部署而配置
 
 ## 部署
 
-[![部署到 EdgeOne](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Ftomcomtang%2Fvercel-ai-sdk-chatbot&output-directory=.next&build-command=npm+run+build&install-command=npm+install)
+[![部署到 EdgeOne Makers](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Ftomcomtang%2Fvercel-ai-sdk-chatbot&output-directory=.next&build-command=npm+run+build&install-command=npm+install)
 
-点击上方按钮直接将此模板部署到 EdgeOne Pages。部署将自动配置构建设置并安装依赖项。
+点击上方按钮直接将此模板部署到 EdgeOne Makers。部署将自动配置构建设置并安装依赖项。
 
 ## ✨ 功能特性
 
@@ -27,7 +27,7 @@
 - 🎭 **流畅动画**：页面过渡、加载状态和交互效果
 - 🔧 **可配置**：轻松切换模型和参数调整
 - 🛡️ **强大的错误处理**：全面的错误消息和重试功能
-- 🌐 **EdgeOne 优化**：专为 EdgeOne Pages 部署而构建
+- 🌐 **EdgeOne 优化**：专为 EdgeOne Makers 部署而构建
 
 ## 🚀 快速开始
 
@@ -89,7 +89,7 @@ pnpm dev
 - **样式**：Tailwind CSS
 - **图标**：Lucide React
 - **语言**：TypeScript
-- **部署**：EdgeOne Pages
+- **部署**：EdgeOne Makers
 
 ## 📁 项目结构
 
@@ -110,7 +110,7 @@ vercel-ai-sdk-chatbot/
 │   ├── useChatLogic.ts      # 聊天逻辑钩子
 │   └── useScrollLogic.ts    # 滚动逻辑钩子
 ├── functions/
-│   └── api/chat/index.js    # EdgeOne Pages Action
+│   └── api/chat/index.js    # EdgeOne Makers Action
 ├── env.example              # 环境变量示例
 ├── EDGEONE_SETUP.md         # EdgeOne 部署指南
 ├── package.json             # 项目配置
@@ -131,11 +131,11 @@ vercel-ai-sdk-chatbot/
 
 ### 支持的模型
 
-- **DeepSeek**：`deepseek-chat`、`deepseek-reasoner`
-- **OpenAI**：`gpt-4o-mini`
-- **Anthropic**：`claude-3-5-sonnet-latest`
-- **Google**：`gemini-2.0-flash`
-- **xAI**：`grok-3`
+- **DeepSeek**: `deepseek-v4-flash`, `deepseek-v4-pro`
+- **OpenAI**: `gpt-5.5`
+- **Anthropic**: `claude-opus-4-8`
+- **Google**: `gemini-3.5-flash`
+- **xAI**: `grok-4.5`
 
 ## 🎨 自定义
 
@@ -174,7 +174,7 @@ const result = await streamText({
 
 ## 🚀 部署
 
-### EdgeOne Pages 部署（推荐）
+### EdgeOne Makers 部署（推荐）
 
 1. 点击上方"部署到 EdgeOne"按钮
 2. 在 EdgeOne 控制台中配置环境变量
@@ -183,7 +183,7 @@ const result = await streamText({
 ### 手动部署
 
 1. 将代码推送到 GitHub
-2. 将您的 GitHub 仓库连接到 EdgeOne Pages
+2. 将您的 GitHub 仓库连接到 EdgeOne Makers
 3. 在 EdgeOne 仪表板中配置环境变量
 4. 自动部署
 
@@ -218,7 +218,7 @@ const result = await streamText({
 - [Vercel AI SDK](https://sdk.vercel.ai/) 提供出色的 AI 集成工具
 - [Next.js](https://nextjs.org/) 提供强大的 React 框架
 - [Tailwind CSS](https://tailwindcss.com/) 提供实用优先的 CSS 框架
-- [EdgeOne Pages](https://pages.edgeone.ai/) 提供云边一体的部署平台
+- [EdgeOne Makers](https://pages.edgeone.ai/) 提供云边一体的部署平台
 
 ---
 

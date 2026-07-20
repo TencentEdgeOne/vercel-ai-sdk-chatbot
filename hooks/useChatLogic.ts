@@ -2,7 +2,7 @@ import { useChat } from '@ai-sdk/react'
 import { useState } from 'react'
 
 export function useChatLogic() {
-  const [selectedModel, setSelectedModel] = useState('deepseek-chat')
+  const [selectedModel, setSelectedModel] = useState('deepseek-v4-flash')
   const [errorMessage, setErrorMessage] = useState<string>('')
   const [lastUserMessage, setLastUserMessage] = useState<string>('')
 
