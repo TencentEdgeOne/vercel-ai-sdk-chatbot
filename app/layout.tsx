@@ -7,8 +7,9 @@ import GridOverlay from '@/components/GridOverlay'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Chatbot',
-  description: 'AI Chatbot powered by Vercel AI SDK',
+  title: 'AI Chatbot | EdgeOne Makers',
+  description: 'AI Chatbot powered by Vercel AI SDK · Demo only · EdgeOne Makers',
+  keywords: "EdgeOne Makers, Demo only",
 }
 
 export default function RootLayout({
